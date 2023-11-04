@@ -1,0 +1,82 @@
+.position{
+    height: 300px;
+    margin-top: 20px;
+    border:1px solid black;
+    font-size: 10px;
+    background-color: blueviolet;
+    overflow: auto;
+    position: relative; 
+}
+
+
+#box1{
+    height: 4em;
+    border : 1px solid black;
+    background-color: #870000;
+    padding: 1em;
+    /* Element is positioned based on the user's scroll position. */
+    position: sticky;
+    top: 1em;
+    font-size:small;
+    text-align: center;
+    color:white;
+}
+
+#box1>#strong{
+    color: rgb(245, 231, 31);
+    font-size: 1.5em;
+}
+
+#display-para{
+    font-size: 2em;
+    border: 1px solid black;
+    margin: 0px;
+ 
+}
+
+#box2{
+    height: 10em;
+    width: 10em;
+    background-color: rgb(14, 120, 85);
+    /* relative is relative to the normal pos inside parent element */
+    position: relative; 
+    top:1em;
+    left:15em;
+    color:white;
+    font-size:small;
+    padding: 1em;
+}
+
+#box3{
+    height: 10em;
+    width: 10em;
+    background-color: rgb(19, 54, 43);
+    /* Element is positioned relative to its closest positioned ancestor. If no such ancestor exists, it is positioned relative to the initial containing block, which is often the viewport. */
+    position: absolute;
+    top:15em; 
+    left:3.5em;
+    color:white;
+    font-size:small;
+    padding: 1em;
+}
+
+#box4{
+    height: 10em;
+    width: 10em;
+    background-color: rgb(241, 126, 31);
+    /* The element is positioned relative to the viewport (the browser window), rather than any parent element. */
+    position: fixed;
+    top:2em;
+    left:22em;
+    color:white;
+    font-size:small;
+    padding: 1em;
+}
+
+#box5{
+    height: 10em;
+    background-color: rgb(5, 51, 71);
+    color:white;
+    font-size:small;
+    padding: 8em;
+}

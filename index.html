@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/addEventListner.css" />
+    <link rel="stylesheet" href="./css/float.css" />
+    <link rel="stylesheet" href="./css/positions.css" />
+    <link rel="stylesheet" href="./css/storage.css"/>
+</head>
+
+<body>
+    <div class="domManipulation">
+        <div id="root1">Hi there</div>
+        <div id="root2">bye there</div>
+        <div id="root3">shy there</div>
+        <button>Show Heading</button>
+        <button>Remove Heading</button>
+    </div>
+
+    <div class="eventlistner">
+        <h2 id="eventHeading">First click me</h2>
+        <p id="eventPara">Double Click</p>
+        <button id="eventButton">Then click Me</button>
+    </div>
+
+    <div class="float">
+        <h3 id="p-heading">
+            <p id="head3">Float Property</p><br>
+            <strong>Without clear</strong>
+        </h3>
+        <div class="div1">div1</div>
+        <div class="div2">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the
+            left, the text in div2 flows around div1.</div>
+        <br>
+        <p>
+            <strong>With clear</strong>
+        </p>
+        <div class="div3">div3</div>
+        <div class="div4">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears
+            elements floated to the left. You can also clear "right" and "both".
+        </div>
+    </div>
+
+    <div class="position">
+        <div id="box1">
+            <strong id="strong">Position Property</strong><br>
+            Navbar , pos = sticky<br>
+            Element is positioned based on the user's scroll position.
+        </div>
+        <p id="display-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatibus
+            eligendi sequi inventore nulla amet! Nemo, nam? Quos repellat dicta laboriosam aperiam recusandae
+            reprehenderit aspernatur voluptate mollitia quia tempore dolorum sunt vel sit ipsam excepturi soluta
+            officiis, consectetur autem hic distinctio adipisci. Impedit, odit reprehenderit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatibus
+            eligendi sequi inventore nulla amet! Nemo, nam? Quos repellat dicta laboriosam aperiam recusandae
+            reprehenderit aspernatur voluptate mollitia quia tempore dolorum sunt vel sit ipsam excepturi soluta
+            officiis, consectetur autem hic distinctio adipisci. Impedit, odit reprehenderit.
+        </p>
+        <div id="box2">
+            pos = relative<br>
+            The element is positioned relative to its normal pos inside parent element
+        </div>
+        <div id="box3">
+            pos = absolute<br>
+            The element is positioned relative to its closest positioned ancestor. If no ancestor exists, it is
+            positioned relative to the initial containing block, which is often the viewport.
+        </div>
+        <div id="box4">
+            pos = fixed<br>
+            The element is positioned relative to the viewport (the browser window), rather than any parent element.
+        </div>
+        <div id="box5">
+            This doesn't have a position property therefore those who has position property will overlap this div.
+            <br><br>
+            Note : If there are 4 boxs back to back in their normal flow with position property then the latest ones
+            will overlap the previous ones.
+        </div>
+    </div>
+
+    <div class="storage">
+        <div class="input-n-bttn">
+            <input id='input' type="text" placeholder="Input"/>
+            <button id="bttnAdd">submit</button>
+            <button id="bttnDel">delete</button>
+        </div>
+    </div>
+    
+
+</body>
+<script src="./js/addEventListner.js"></script>
+<script src="./js/arrayMethods.js"></script>
+<script src="./js/htmlDOM.js"></script>
+<script src="./js/storage.js"></script>
+
+</html>
